@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(31, 27, 30);
+}
+h1{
+    color: aqua;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow:
+    0 0 1px aqua,
+    0 0 5px aqua,
+    0 0 8px aqua,
+    0 0 500px rgb(255, 255, 255),
+    0 0 5px rgb(255, 255, 255),
+    0 0 10px rgb(0, 187, 255);
+    letter-spacing: 10px;
+    margin: 200px;
+}
