@@ -1,20 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 body{
-    background-color: rgb(31, 27, 30);
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 h1{
-    color: aqua;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-shadow:
-    0 0 1px aqua,
-    0 0 5px aqua,
-    0 0 8px aqua,
-    0 0 500px rgb(255, 255, 255),
-    0 0 5px rgb(255, 255, 255),
-    0 0 10px rgb(0, 187, 255);
-    letter-spacing: 10px;
-    margin: 200px;
+    margin-left: -900px;
+    margin-top: -500px;
+    position: relative;
+    font-size: 6em;
+    color: #fff;
+    
 }
-.coolman{
-    float: right -2;
-    margin-top: -50px;
+h1::before{
+    content: attr(data-text);
+    position: absolute;
+    color: rgb(0, 221, 255);
+    width: 350px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid rgb(0, 221, 255);
+    animation: animate 8s linear infinite;
+    filter: drop-shadow(0 0 20px rgb(0, 221, 255)) drop-shadow(0 0 50px rgb(0, 221, 255));
+}
+@keyframes animate{
+    0%,10%,100%
+    {
+        width: 0;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
 }
