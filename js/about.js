@@ -12,4 +12,4 @@ function opentab(tabname) {
     document.getElementsByClassName(tabname).classList.add("active-tab");
 }
 
-//it dont work bruh idk what to do
+//it dont work bruh idk what to do javascript is inderdaad niet mn sterkte punt
