@@ -1,9 +1,7 @@
 :root {
-  
-  --clr-neon: rgb(255, 0, 208);
-  --clr-bg: rgb(31, 27, 30);
+  --clr-neon: #ff004f;
+  --clr-bg: #080808;
 }
-
 *,
 *::before,
 *::after {
@@ -80,4 +78,8 @@ body {
 .neon-button:hover::after,
 .neon-button:focus::after {
   opacity: 1;
+}
+.btn.btn2{
+  display: inline-block;
+  background: #ff004f;
 }
